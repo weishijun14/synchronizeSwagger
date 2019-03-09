@@ -2,8 +2,9 @@
 ===
 
 ### 1. 替换conf.json里面的url字段为接口url
-### 2. npm run ss 获取api
-### 3. npm run start 起服务。
+### 2. npm i
+### 3. npm run ss 获取api
+### 4. npm run start 起服务。
 
 ---------------------------
 
