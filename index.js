@@ -30,5 +30,18 @@ if (useSuccessRates.trunon) {
   });
 }
 
+
+// set code = 200
+app.use(function (req, res, next) {
+  var send = res.send;
+  res.send = function (string) {
+    var body = string instanceof Buffer ? string.toString() : string;
+    body = JSON.parse(body);
+    body.code="200";
+    send.call(this, JSON.stringify(body));
+  }
+  next();
+})
+
 // 路由
 generateRouter(app);
