@@ -29,7 +29,7 @@ const synchronizeSwagger = {
 **/
 const Mock = require("mockjs");
 module.exports = function (app) {
-  app.${method}('/api${path.replace(/\{([^}]*)\}/g, ":$1")}', (req, res) => {
+  app.${method}('${path.replace(/\{([^}]*)\}/g, ":$1")}', (req, res) => {
     res.json(Mock.mock(${example}));
   });
 };`;
