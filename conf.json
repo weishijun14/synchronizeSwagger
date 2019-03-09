@@ -2,7 +2,7 @@
   "port": 8091,
   "swaggerOptions": {
     "url":
-      "https://raw.githubusercontent.com/zzf03680147/synchronizeSwagger/master/swagger.json",
+      "http://192.168.33.56:9000/v2/api-docs",
     "outputPath": "./routes",
     "blacklist": []
   },
